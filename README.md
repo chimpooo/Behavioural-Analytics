@@ -7,7 +7,7 @@ Objective: Enrichment of threat sharing database for providing Behaviour Analyti
 Implementation:
 1. Extraction hashes are done from Malpedia and Vx-underground. This code uses the burp suite proxy server for analysing the enormous data without causing overload. Also the quota per day analysis in VirusTotal is limited to 500. So, it prevents data limit from going over this limit. 
 
-2. get_vt_collection:
+2. get_vt_collection
 Handles the collection of information from VirusTotal APIs for the hashes fed. If the sample is analysed in VT then it provides the details of the sample in JSON format. 
 
 3. extract_indicators.py
